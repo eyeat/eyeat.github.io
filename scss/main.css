@@ -12,7 +12,7 @@ main #influence .container, main #journey .container, main #prototype .container
     .container div {
       width: 100% !important; }
   li {
-    font-size: 1.1rem; }
+    font-size: 2.8rem !important; }
   iframe {
     width: 370px !important;
     height: 315px !important; }
