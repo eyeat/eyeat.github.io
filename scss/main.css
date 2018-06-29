@@ -6,7 +6,7 @@ main #influence .container, main #journey .container, main #prototype .container
   justify-content: space-around;
   padding: 10px 0px 45px; }
 
-@media (max-width: 700px) {
+@media (max-width: 1136px) {
   .container {
     display: block !important; }
     .container div {
