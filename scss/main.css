@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+main #influence .container, main #journey .container, main #prototype .container, main #contact .container {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1;
+  justify-content: space-around;
+  padding: 10px 0px 45px; }
+
+@media (max-width: 700px) {
+  .container {
+    display: block !important; }
+    .container div {
+      width: 100% !important; }
+  li {
+    font-size: 1.1rem; }
+  iframe {
+    width: 370px !important;
+    height: 315px !important; }
+  #contact .container img {
+    width: 30% !important; } }
+
+*, *:after, *:before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  font-family: 'Roboto', Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1.6rem;
+  letter-spacing: 1px; }
+
+nav {
+  background: white;
+  position: fixed;
+  top: 0;
+  width: 100%; }
+
+ul {
+  display: flex;
+  justify-content: flex-start;
+  margin: 0 auto;
+  padding: 10px;
+  width: 80%; }
+  ul .home {
+    margin-right: auto; }
+  ul li {
+    list-style: none;
+    padding: 15px;
+    text-decoration: none; }
+  ul li:hover {
+    color: #139776;
+    transition: all 0.7s; }
+
+main #main {
+  background: tan;
+  height: 100vh;
+  overflow: hidden;
+  width: 100%; }
+
+main .wrapper {
+  background: rgba(228, 210, 186, 0.904);
+  width: 100%; }
+
+main #influence, main #journey, main #prototype, main #contact {
+  margin: 0 auto;
+  text-align: center;
+  transition: 1s ease-in;
+  width: 80%; }
+
+main #influence .container div, main #journey .container div {
+  flex: 1;
+  padding: 15px;
+  width: 33.33%; }
+
+main #prototype .container div {
+  flex: 1;
+  width: 100%; }
+
+main #prototype iframe {
+  padding: 20px 10px 0px;
+  width: 85%;
+  height: 415px; }
+
+main #contact .container div {
+  flex: 1;
+  width: 20%; }
+  main #contact .container div img {
+    width: 70%; }
+  main #contact .container div p {
+    padding: 0 10px 10px; }
+
+.header {
+  color: #353439;
+  font-weight: bold;
+  display: block;
+  font-size: 3.5rem;
+  padding: 50px 0px 10px;
+  text-transform: uppercase; }
+
+img {
+  padding: 20px 0;
+  width: 50%; }
+
+h1 {
+  color: #353439 !important;
+  display: block;
+  padding: 10px; }
+
+a {
+  color: inherit;
+  text-decoration: none; }
+
+p {
+  color: #3b3e44; }
+
+footer {
+  align-items: center;
+  background: grey;
+  display: flex;
+  height: 50px;
+  justify-content: center;
+  width: 100%; }
+  footer p {
+    color: #fff;
+    display: block;
+    padding: 10px; }
+
+.hide {
+  opacity: 0;
+  transition: all 0.7s; }
+
+.show {
+  opacity: 1; }

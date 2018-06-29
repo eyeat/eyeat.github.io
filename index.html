@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>EYEAT</title>
+    <link rel="stylesheet" href="./scss/main.css" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li class="home">
+                <a href="index.html" ></a>EYEAT</a>
+            </li>
+            <li>
+                <a href="#influence">WHY</a>
+            </li>
+            <li>
+                <a href="#journey">HOW</a>
+            </li>
+            <li>
+                <a href="#prototype">TESTING</a>
+            </li>
+            <li>
+                <a href="#contact">GET IN TOUCH</a>
+            </li>
+        </ul>
+    </nav>
+    <main>
+        <section id="main">
+            <p>Main banner</p>
+        </section>
+
+        <section id="influence" class="hide">
+            <p class="header">Our Influence</p>
+            <div class="container">
+                <div>
+                    <img src="statue-of-liberty.png" alt="NYC logo">
+                    <h1>NYC</h1>
+                    <p>As a New Yorkers, it is make sense that we try to come up with a solution to our city's problem. </p>
+                </div>
+                <div>
+                    <img src="hide.png" alt="Blind logo">
+                    <h1>Population</h1>
+                    <p>After doing some research, we found out that 60,000 NYC residents are blind with 360,000 of people are visually impaired</p>
+                </div>
+                <div>
+                    <img src="social-care.png" alt="Insight logo">
+                    <h1>Insight</h1>
+                    <p>Together we want to help people with visual impairment to be more independent especially when they are in a restaurant seeting where often, they require assistance when they order food in restaurant</p>
+                </div>
+            </div>
+        </section>
+    
+        <div class="wrapper">
+            <section id="journey" class="hide">
+                <p class="header">Our Journey</p>
+                <div class="container">
+                    <div>
+                        <img src="ibm.png" alt="IBM logo">
+                        <h1>Brainstorm</h1>
+                        <p>Our team was formed during CUNY Hackathon Spring 2018. Coming from different colleges and expertises, we agreed on using the IBM Watson Technologies to make our idea into reality.</p>
+                    </div>
+                    <div>
+                        <img src="database.png" alt="NYC Open Data database logo">
+                        <h1>Planning</h1>
+                        <p>As it is inneficient to get each restaurants' information, we implement NYC Open Data API to get information from the restaurant nearby the users</p>
+                    </div>
+                    <div>
+                        <img src="react.png" alt="React logo">
+                        <h1>Execution</h1>
+                        <p>After all of the items coming together, we start building our app using React Native framework to leverage our code reusability.</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <section id="prototype" class="hide">
+            <p class="header">Curiosity Gets to You?</p>
+            <div class="container">
+                <div>
+                    <p>See our prototype in action in this video below:</p>
+                    <iframe src="https://www.youtube.com/embed/0C3l4l71o10?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="container">
+                <div>
+                    <p>Want to start tinkering with it? Pull our code and start building on top of it</p>
+                    <a href="https://github.com/LuisRizo/Eyeat" target="_blank" ><img src="github.png" alt="Github logo" style="width: 20%;"></a>
+                </div>
+            </div>
+        </section>
+        <div class="wrapper">
+            <section id="contact" class="hide">
+                <p class="header">Get in Touch</p>
+                <div class="container">
+                    <div>
+                        <img src="daniel.png" alt="Daniel">
+                        <strong><p>Daniel</p></strong>
+                        <a href="https://www.linkedin.com/in/danielconstantine/"><i class="fab fa-linkedin fa-lg"></i></a>
+                    </div>
+                    <div>
+                        <img src="luis.png" alt="Luis">
+                        <strong><p>Luis</p></strong>
+                        <a href="https://www.linkedin.com/in/luisrizog/" target="_blank"><i class="fab fa-linkedin fa-lg"></i></a>
+                    </div>
+                    <div>
+                        <img src="tommy.png" alt="Tommy">
+                        <strong><p>Tommy</p></strong>
+                        <a href="https://www.linkedin.com/in/yiu-chung-tommy-yau/" target="_blank"><i class="fab fa-linkedin fa-lg"></i></a>
+                    </div>
+                    <div>
+                        <img src="ryan.png" alt="Ryan">
+                        <strong><p>Ryan</p></strong>
+                        <a href="https://www.linkedin.com/in/liang-fang-0827/"><i class="fab fa-linkedin fa-lg"></i></a>
+                    </div>
+                    <div>
+                        <img src="shinan.png" alt="Shinan">
+                        <strong><p>Shinan</p></strong>
+                        <a href="https://www.linkedin.com/in/shinan-liu-162172153/"><i class="fab fa-linkedin fa-lg"></i></a>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <p>Designed by Daniel Constantine. &copy; EYEAT team 2018. </p>
+    </footer>
+    <script> 
+        $(window).scroll(function(){
+            var position = $(this).scrollTop();
+            if (position > 130){
+                $('#influence').addClass('show')
+            }
+            if (position > 700){
+                $('#journey').addClass('show');
+            }
+            if (position > 1100){
+                $('#prototype').addClass('show');
+            }
+            if (position > 2000) {
+                $('#contact').addClass('show');
+            }
+            console.log(position);
+        });
+    </script>
+
+</body>
+
+</html>
